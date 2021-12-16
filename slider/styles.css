@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(17, 46, 3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  box-shadow: 0 0 40px rgba(10, 9, 9, 0.63);
+}
+
+.slide h3 {
+  position: absolute;
+  font-style: 24px;
+  bottom: 35px;
+  left: 30px;
+  color: #fff;
+  margin: 0;
+  opacity: 0;
+}
+
+.active {
+  flex: 10;
+  box-shadow: 0 0 40px rgba(253, 253, 253, 0.63) inset;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity .6s ease .6s;
+}
