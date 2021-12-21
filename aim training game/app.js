@@ -83,3 +83,16 @@ const getRandomColor = () => {
 
   return colors[index];
 };
+
+// Выиграть максимальное количество очков )) вызвать в консоли winTheGame и нажать на время 
+function winTheGame() {
+  function kill() {
+    const circle = document.querySelector('.circle');
+
+    if (circle) {
+      circle.click();
+    }
+  };
+
+  setInterval(kill, 75);
+}
